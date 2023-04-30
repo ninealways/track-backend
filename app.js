@@ -11,7 +11,7 @@ const User = require("./db/userModel");
 const auth = require("./auth");
 
 //adding cors
-app.use(cors({ origin: [process.env.CORS_URL] }));
+app.use(cors());
 
 // execute database connection
 dbConnect();
